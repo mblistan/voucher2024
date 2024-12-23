@@ -1,8 +1,7 @@
 /* General styling */
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: url('https://www.publicdomainpictures.net/pictures/270000/velka/christmas-background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  font-family: 'Trebuchet MS', sans-serif;
+  background: #b22222; /* Christmas red background */
   color: #fff;
   margin: 0;
   display: flex;
@@ -10,6 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 .container {
@@ -60,6 +60,7 @@ h1 {
   height: 100%;
   overflow: hidden;
   pointer-events: none;
+  z-index: 0;
 }
 
 .snowflake {
@@ -73,36 +74,42 @@ h1 {
 
 .snowflake:nth-child(1) {
   left: 10%;
+  font-size: 2rem;
   animation-duration: 10s;
   animation-delay: 0s;
 }
 
 .snowflake:nth-child(2) {
   left: 30%;
+  font-size: 1.8rem;
   animation-duration: 12s;
   animation-delay: 2s;
 }
 
 .snowflake:nth-child(3) {
   left: 50%;
+  font-size: 2.2rem;
   animation-duration: 8s;
   animation-delay: 4s;
 }
 
 .snowflake:nth-child(4) {
   left: 70%;
+  font-size: 1.7rem;
   animation-duration: 11s;
   animation-delay: 1s;
 }
 
 .snowflake:nth-child(5) {
   left: 90%;
+  font-size: 2rem;
   animation-duration: 9s;
   animation-delay: 3s;
 }
 
 .snowflake:nth-child(6) {
   left: 20%;
+  font-size: 1.6rem;
   animation-duration: 14s;
   animation-delay: 5s;
 }
